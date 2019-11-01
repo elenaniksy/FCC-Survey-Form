@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a5d9ace-66c2-4d39-b80e-f5498817bbf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Survey Form.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FCC-Survey-Form/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FCC-Survey-Form/index.html" afterDir="false" />
     </list>
@@ -63,7 +59,9 @@
       <option name="presentableId" value="Default" />
       <updated>1572178918964</updated>
       <workItem from="1572178921045" duration="1314000" />
-      <workItem from="1572268190243" duration="1292000" />
+      <workItem from="1572268190243" duration="1911000" />
+      <workItem from="1572594775670" duration="345000" />
+      <workItem from="1572595181982" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="Repository created">
       <created>1572179497977</created>
@@ -93,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572180203339</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="bootstrapAdd">
+      <created>1572273772918</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572273772918</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Repository created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repository created" />
+    <MESSAGE value="bootstrapAdd" />
+    <option name="LAST_COMMIT_MESSAGE" value="bootstrapAdd" />
   </component>
 </project>
