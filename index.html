@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>FCC: Survey Form</title>
-    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="CSS/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1 id="title"> freeCodeCamp Survey Form</h1>
-<p id="description">Thank you for taking the time to help us improve the platform</p>
-<form id="survey-form">
+<div class="container">
+        <h1 id="title" class="display-4 font-weight-normal"> freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
     <div class="form-group">
             <label id="name-label" for="name">Name</label>
-            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+            <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required>
     </div>
 
     <div class="form-group">
         <label id="email-label" for="email">Email</label>
-        <input id="email" type="text" name="email" placeholder="Enter your Email" required>
+        <input id="email" class="form-control" type="text" name="email" placeholder="Enter your Email" required pattern="^[a-zA-Z0-9_\.\-]+@([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,6}$">
     </div>
 
     <div class="form-group">
         <label id="number-label" for="number">Age (optional)</label>
-        <input id="number" type="number" name="age" min="10" max="99" placeholder="Age">
+        <input id="number" class="form-control" type="number" name="age" min="10" max="99" placeholder="Age">
     </div>
 
     <div class="form-group">
@@ -104,6 +106,6 @@
         <button type="submit" id="submit">Submit</button>
     </div>
 </form>
-
+</div>
 </body>
 </html>
