@@ -1,8 +1,17 @@
+/*----------------------- CSS Description-----------------------------
+    Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+*/
+body {
+    font-size: 12px;
+}
 
+#main-header {
+    margin-top: 10rem;
+}
 
-
-
-
+.fa-fire {
+    content: '\f06d';
+}
 
 
 
