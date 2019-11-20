@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>FCC: Product Landing Page</title>
-    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://kit.fontawesome.com/b99b96fe7e/css/fontawesome.css" rel="stylesheet">
+    <link href="https://kit.fontawesome.com/b99b96fe7e/css/brands.css" rel="stylesheet">
+    <link href="https://kit.fontawesome.com/b99b96fe7e/solid.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99b96fe7e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<!--------------------- Header --------------------->
 <header id="header">
-    <div сlass="container ">
-        <nav class="navbar navbar-default fixed-top navbar-expand-sm justify-content-between" id="nav-bar" role="navigation">
-            <div class="navbar-brand">
+    <div class="container">
+        <nav class="navbar fixed-top navbar-light justify-content-between navbar-expand-sm" id="nav-bar" role="navigation">
+            <div class="navbar-brand ">
                 <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" width="280px" height="30px" id="header-img" class="d-inline-block align-top" alt="original trombones logo">
             </div>
-            <div>
+            <div id="navbar-links">
                 <ul class="navbar-nav">
-                    <li class="navbar-item ">
-                        <a class="nav-link" href="#">Features</a>
+                    <li class="navbar-item active">
+                        <a class="nav-link" href="#main-advatige">Features</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">How It Works</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#video">How It Works</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#pricing">Pricing</a>
                     </li>
                 </ul>
             </div>
@@ -34,110 +37,106 @@
     </div>
 </header>
 
-<!--------------------- Main Content --------------------->
 <main role="main">
     <div class="container">
         <section id="main-header">
 
                 <div class="row justify-content-center">
-                    <h1 class="text-center h2"> Handcrafted, home-made masterpieces </h1>
+                    <h1 class="text-center"> Handcrafted, home-made masterpieces </h1>
                 </div>
 
                 <div class="row justify-content-center">
                     <form id="form">
                         <div class="form-group text-center">
                             <label id="email-label" for="email-label"></label>
-                            <input type="email" class="" name="name" placeholder="Enter your email address..." required>
+                            <input type="email" text="email" class="form-control" name="name" placeholder="Enter your email address..." required>
                         </div>
 
                         <div class="form-group text-center">
-                            <button type="submit" id="submit" class="btn btn-primary">Get started</button>
+                            <button type="submit" id="submit" class="btn btn-warning btn-lg" value="getStarted">Get started</button>
                         </div>
                     </form>
                 </div>
         </section>
 
         <section id="main-advatige">
-                 <div class="row" id="advantage">
-                     <div class="icon">
-                         <i class="material-icons">whatshot</i>
-                     </div>
-                     <div class="description">
-                         <h2 class="h4">Premium materials</h2>
-                         <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
-                     </div>
-                 </div>
-
-                 <div class="row" id="advantage">
-                        <div class="icon">
-                            <i class="material-icons">local_shipping</i>
-                        </div>
-                        <div class="description">
-                            <h2 class="h4">Fast Shipping</h2>
-                            <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
-                        </div>
-                 </div>
-
-                 <div class="row" id="advantage">
-                        <div class="icon">
-                            <i class="material-icons">thumb_up_alt</i>
-                        </div>
-                        <div class="description">
-                            <h2 class="h4">Quality Assurance</h2>
-                            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
-                        </div>
-                 </div>
-        </section>
-
-        <section id="video">
-            <div class="row">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="row" id="advantage">
+                <div class="icon">
+                    <i class="fas fa-fire-alt"></i>
+                </div>
+                <div class="description">
+                    <h2 class="h4">Premium materials</h2>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
                 </div>
             </div>
+
+            <div class="row " id="advantage">
+                <div class="icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <div class="description">
+                    <h2 class="h4">Fast Shipping</h2>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </div>
+            </div>
+
+            <div class="row" id="advantage">
+                <div class="icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="description">
+                    <h2 class="h4">Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="how_it_works">
+                    <iframe id="video" height="315px" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
 
         <section id="pricing">
             <div class="row card-group justify-content-around">
                 <div class="card border-dark mb-3 text-center" id="tenor" style="max-width: 18rem;">
-                    <div class="card-header">Tenor Trombone</div>
-                    <div class="card-body text-dark">
+                    <div class="card-header h5">Tenor Trombone</div>
+                    <div class="card-body text-dark" id="card-price">
                         <h5 class="card-title">600$</h5>
                         <p class="card-text">
-                            <br>Lorem ipsum.</br>
-                            <br>Lorem ipsum.</br>
-                            <br>Lorem ipsum dolor.</br>
-                            <br>Lorem ipsum.</br>
+                            <br>Lorem ipsum.
+                            <br>Lorem ipsum.
+                            <br>Lorem ipsum dolor.
+                            <br>Lorem ipsum.
                         </p>
-                        <button type="button" id="tenor_button" class="form-control btn btn-primary">Select</button>
+                        <button type="button" id="tenor_button" class="form-control btn btn-warning">Select</button>
                     </div>
                 </div>
 
-                <div class="card border-dark mb-3 text-center" id="bass" style="max-width: 18rem;">
-                    <div class="card-header">Bass Trombone</div>
-                    <div class="card-body text-dark">
+                <div class="card border-dark border-left mb-3 text-center" id="bass" style="max-width: 18rem;">
+                    <div class="card-header h5">Bass Trombone</div>
+                    <div class="card-body text-dark" id="card-price">
                         <h5 class="card-title">900$</h5>
                         <p class="card-text">
-                            <br>Lorem ipsum.</br>
-                            <br>Lorem ipsum.</br>
-                            <br>Lorem ipsum dolor.</br>
-                            <br>Lorem ipsum.</br>
+                            <br>Lorem ipsum.
+                            <br>Lorem ipsum.
+                            <br>Lorem ipsum dolor.
+                            <br>Lorem ipsum.
                         </p>
-                        <button type="button" id="bass_button" class="form-control btn btn-primary">Select</button>
+                        <button type="button" id="bass_button" class="form-control btn btn-warning">Select</button>
                     </div>
                 </div>
 
-                <div class="card border-dark mb-3 text-center" id="valve" style="max-width: 18rem;">
-                    <div class="card-header">Valve Trombone</div>
-                    <div class="card-body text-dark">
+                <div class="card border-dark border-left mb-3 text-center" id="valve" style="max-width: 18rem;">
+                    <div class="card-header h5">Valve Trombone</div>
+                    <div class="card-body text-dark" id="card-price">
                         <h5 class="card-title">1200$</h5>
                         <p class="card-text">
-                            <br>Lorem ipsum.</br>
-                            <br>Lorem ipsum.</br>
-                            <br>Lorem ipsum dolor.</br>
-                            <br>Lorem ipsum.</br>
+                            <br>Lorem ipsum.
+                            <br>Lorem ipsum.
+                            <br>Lorem ipsum dolor.
+                            <br>Lorem ipsum.
                         </p>
-                        <button type="button" id="valve_button" class="form-control btn btn-primary">Select</button>
+                        <button type="button" id="valve_button" class="form-control btn btn-warning">Select</button>
                     </div>
                 </div>
 
@@ -146,20 +145,23 @@
     </div>
 </main>
 
-<!--------------------- Footer --------------------->
 <footer>
-    <div class="container">
-        <ul>
-            <li>
+    <div class="container" id="footer-container">
+        <div class="d-flex flex-column justify-content-end text-right">
+
+            <div class="footer-right" id="footer-link">
                 <a href="#">Privacy</a>
-            </li>
-            <li> <a href="#">Terms</a>
-            </li>
-            <li>
+                <a href="#">Terms</a>
                 <a href="#">Contacts</a>
-            </li>
-        </ul>
-        <span>Copyright 2016, Original Trombones</span>
+            </div>
+
+            <div class="footer-right" id="footer-text">
+                <span class="text-muted">Copyright 2016, Original Trombones</span>
+            </div>
+
+        </div>
+
+
     </div>
 </footer>
 

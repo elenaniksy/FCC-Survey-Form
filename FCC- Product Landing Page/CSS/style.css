@@ -1,17 +1,147 @@
-/*----------------------- CSS Description-----------------------------
-    Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+/*----------------------- CSS Description---------------------------
+    Info: 1rem === 12px, 1.5rem === 18px, 2rem === 24px and so forth
 */
+:root{
+    --background-color: #EEEEEE;
+    --customise-yellow: #FF8C00;
+    --customise-grey: #e0e0e0;
+    --link-color: black;
+    --footer-color: #bdbdbd;
+}
+
 body {
+    font-family: 'Lato', sans-serif !important;
     font-size: 12px;
+    line-height: 1.2rem;
+    background-color: var(--background-color) !important;
+}
+
+.container {
+    max-width: 1000px;
+}
+/*--------------------- Header ---------------------*/
+header {
+    position: fixed;
+    display: flex;
+    background-color: var(--background-color) !important;
+    font-size: 1.2rem;
 }
 
 #main-header {
-    margin-top: 10rem;
+    margin-top: 8rem;
+    padding: 2.5rem auto;
+}
+/*--------------------- ===== ---------------------*/
+
+/*--------------------- Singing Form ---------------------*/
+
+#form {
+    width: border-box;
+    display: block;
+    padding: 2rem auto;
+    margin: auto 1.5rem;
 }
 
-.fa-fire {
-    content: '\f06d';
+.btn {
+    background: var(--customise-yellow);
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
 }
+/*--------------------- ===== ---------------------*/
+
+/*--------------------- Features ---------------------*/
+#advantage {
+    display: flex;
+    flex-wrap: nowrap !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#main-advatige .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    width: 80vw;
+}
+
+#main-advatige .icon {
+    color: var(--customise-yellow);
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+}
+
+/*--------------------- ===== ---------------------*/
+
+/*--------------------- How It Works ---------------------*/
+
+#how_it_works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video {
+    max-width: 40vw;
+    width:100%;
+    margin: 2rem;
+}
+
+/*--------------------- ===== ---------------------*/
+/*--------------------- Pricing ---------------------*/
+
+#pricing {
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.card-header {
+    background-color: var(--customise-grey);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+#card-price {
+    background-color: var(--background-color);
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 0.8rem;
+}
+/*--------------------- ===== ---------------------*/
+
+/*--------------------- Footer ---------------------*/
+#footer-container{
+    background: var(--footer-color);
+    font-size: 1rem;
+    line-height: 1.7rem;
+    padding: 0.5rem;
+}
+ a {
+     color: var(--link-color);
+     margin: 1rem;
+     text-align: end;
+     font-size: 1.1rem;
+ }
+
+ #footer-text {
+     margin-right: 1rem;
+ }
+
+
+
+/*--------------------- ===== ---------------------*/
 
 
 
