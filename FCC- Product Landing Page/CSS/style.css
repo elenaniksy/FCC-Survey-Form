@@ -69,25 +69,25 @@ header {
 #advantage {
     display: flex;
     flex-wrap: nowrap !important;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    justify-content: center;
 }
 
-#main-advatige .description {
+.description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 1rem;
-    max-width: 80vw;
+    width: 70vw;
+    padding: 1rem;
 }
 
-#main-advatige .icon {
-    color: var(--customise-yellow);
-    font-size: 3rem;
+.icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20vw;
+    width: 10vw;
+    color: var(--customise-yellow);
+    font-size: 3rem;
 }
 
 /*--------------------- ===== ---------------------*/
@@ -162,17 +162,16 @@ header {
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     .description {
-        padding: 0.5rem;
+        padding: 1.5rem;
     }
-
     .logo {
         width: 80vw;
     }
-
     h1{
         padding: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
-
 }
 
 /*Small devices (landscape phones, less than 768px)*/
