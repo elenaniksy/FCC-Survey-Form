@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FCC: Technical Documentation Page</title>
     <link href="CSS/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="container">
         <nav id="navbar" class="navbar-wrapper">
-            <header id="main-header">JS Documentation</header>
-            <ul style="list-style: none">
+            <ul style="list-style: none" id="navbar-list">
+                <li>
+                    <header id="main-header">JS Documentation</header>
+                </li>
                 <li>
                     <a class="nav-link" href="#Introduction">Introduction</a>
                 </li>
@@ -56,7 +59,7 @@
             </ul>
         </nav>
 
-<main id="main-doc" class="container">
+<main id="main-doc">
     <div class="content-wrapper">
         <section class="main-section" id="Introduction">
             <header>Introduction</header>
@@ -105,8 +108,11 @@
                 To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
             </p>
             <blockquote>
-                function greetMe(yourName) { alert("Hello " + yourName); }
-                <br>greetMe("World");</br>
+                <code>function greetMe(yourName) {<br>
+                        alert("Hello "+ yourName);<br>
+                }<br>
+                greetMe("World");
+                </code>
             </blockquote>
             <p>
                 Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
@@ -132,7 +138,7 @@
                 With the keyword var. For example,
             </p>
             <blockquote>
-                var x = 42.
+                <code>var x = 42.</code>
             </blockquote>
             <p>
                 This syntax can be used to declare both local and global variables.
@@ -141,7 +147,7 @@
                 By simply assigning it a value. For example,
             </p>
             <blockquote>
-                x = 42.
+                <code>x = 42.</code>
             </blockquote>
             <p>
                 This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
@@ -150,7 +156,7 @@
                 With the keyword let. For example,
             </p>
             <blockquote>
-                let y = 13.
+                <code>let y = 13.</code>
             </blockquote>
             <p>
                 This syntax can be used to declare a block scope local variable. See Variable scope below.
@@ -165,14 +171,24 @@
                 JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
             </p>
             <blockquote>
-                if (true) { var x = 5; } console.log(x); // 5
+                <code>if (true) {<br>
+                    var x=5;<br>
+                    }<br>
+                    <br>
+                    console.log(x); // 5</code>
             </blockquote>
             <p>
                 This behavior changes, when using the let declaration introduced in ECMAScript 2015.
             </p>
             <blockquote>
-                if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
-                defined
+                <code>
+                    if (true) {<br>
+                    let y=5;<br>
+                    }<br>
+                    <br>
+                    console.log(y); // ReferenceError: y is not<br>
+                    defined
+                </code>
             </blockquote>
 
         </section>
@@ -191,7 +207,7 @@
                 You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
             </p>
             <blockquote>
-                const PI = 3.14;
+                <code>const PI = 3.14;</code>
             </blockquote>
             <p>
                 A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
@@ -203,21 +219,25 @@
                 You cannot declare a constant with the same name as a function or variable in the same scope. For example:
             </p>
             <blockquote>
-                // THIS WILL CAUSE AN ERROR
-                <br> function f() {};
-                <br> const f = 5;
-                <br> // THIS WILL CAUSE AN ERROR ALSO
-                <br> function f() {
-                <br> const g = 5;
-                <br> var g; //statements
-                <br>}
+                <code>// THIS WILL CAUSE AN ERROR<br>
+                    function f() {};<br>
+                    const f = 5;<br>
+                    // THIS WILL CAUSE AN ERROR ALSO<br>
+                    function f() {<br>
+                    const g = 5;<br>
+                    var g; //statements<br>
+                    }</code>
             </blockquote>
             <p>
                 However, object attributes are not protected, so the following statement is executed without problems.
             </p>
             <blockquote>
-                const MY_OBJECT = {"key": "value"};
-                <br> MY_OBJECT.key = "otherValue"; </br>
+                <code>const MY_OBJECT= {<br>
+                    "key": "value"<br>
+                    }<br>
+                    <br>
+                    ;<br>
+                    MY_OBJECT.key="otherValue";</code>
             </blockquote>
         </section>
         <section class="main-section" id="Data_types">
@@ -251,11 +271,13 @@
                 Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:
             </p>
             <blockquote>
-                if (condition) {
-                <br>statement_1;</br>
-                <br>} else {
-                <br> statement_2;</br>
-                <br>}
+                <code>if (condition) {<br>
+                    statement_1;<br>
+                    }<br>
+                    <br>
+                    else {<br>
+                    statement_2;<br>
+                    }</code>
             </blockquote>
             <p>
                 condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.
@@ -264,39 +286,59 @@
                 You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:
             </p>
             <blockquote>
-                if (condition_1) {
-                <br>statement_1;</br>
-                <br>} else if (condition_2) {
-                <br>statement_2;</br>
-                <br>} else if (condition_n) {
-                <br>statement_n;</br>
-                <br>} else {
-                <br>statement_last;</br>
-                <br>}
+                <code>
+                    if (condition_1) {<br>
+                    statement_1;<br>
+                    }<br>
+                    <br>
+                    else if (condition_2) {<br>
+                    statement_2;<br>
+                    }<br>
+                    <br>
+                    else if (condition_n) {<br>
+                    statement_n;<br>
+                    }<br>
+                    <br>
+                    else {<br>
+                    statement_last;<br>
+                    }<br>
+                </code>
             </blockquote>
             <p>
                 In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:
             </p>
             <blockquote>
-                if (condition) {
-                <br>statement_1_runs_if_condition_is_true;</br>
-                <br>statement_2_runs_if_condition_is_true;</br>
-                <br>} else {
-                <br>statement_3_runs_if_condition_is_false;</br>
-                <br>statement_4_runs_if_condition_is_false; </br>
-                <br>}
+                <code>
+                    if (condition) {<br>
+                    statement_1_runs_if_condition_is_true;<br>
+                    statement_2_runs_if_condition_is_true;<br>
+                    }<br>
+                    <br>
+                    else {<br>
+                    statement_3_runs_if_condition_is_false;<br>
+                    statement_4_runs_if_condition_is_false;<br>
+                    }<br>
+                </code>
             </blockquote>
             <p>
                 It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:
             </p>
             <blockquote>
-                if (x = y) { /* statements here */ }
+               <code>
+                   if (x=y) {<br>
+                   /* statements here */<br>
+                   }
+               </code>
             </blockquote>
             <p>
                 If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:
             </p>
             <blockquote>
-                if ((x = y)) { /* statements here */ }
+                <code>
+                    if ((x=y)) {<br>
+                    /* statements here */<br>
+                    }
+                </code>
             </blockquote>
         </section>
         <section class="main-section" id="while_statement">
@@ -305,7 +347,9 @@
                 A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:
             </p>
             <blockquote>
-                while (condition) statement
+                <code>
+                    while (condition) statement
+                </code>
             </blockquote>
             <p>
                 If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
@@ -323,11 +367,15 @@
                 The following while loop iterates as long as n is less than three:
             </p>
             <blockquote>
-                <br>var n = 0;
-                <br>var x = 0;
-                <br>while (n < 3) {
-                <br>n++; x += n; </br>
-                <br>}
+                <code>
+                    var n=0;<br>
+                    var x=0;<br>
+                    <br>
+                    while (n < 3) {<br>
+                    n++;<br>
+                    x+=n;<br>
+                    }
+                </code>
             </blockquote>
             <p>With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:
             </p>
@@ -366,15 +414,17 @@
                 For example, the following code defines a simple function named square:
             </p>
             <blockquote>
-                function square(number) {
-                <br>return number * number;
-                <br>}
+                <code>
+                    function square(number) {<br>
+                    return number * number;<br>
+                    }
+                </code>
             </blockquote>
             <p>
                 The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.
             </p>
             <blockquote>
-                return number * number;
+                <code>return number * number;</code>
             </blockquote>
             <p>
                 Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.
