@@ -3,9 +3,9 @@
 */
 :root {
     --font-color: #424242;
-    --customized-grey: #616161;
+    --grey: #616161;
     --main-background: #f5f5f5;
-    --customized-yellow: #FFA000;
+    --yellow: #FFA000;
     --light-grey: #BDBDBD;
     
 }
@@ -33,7 +33,7 @@ header {
 }
 
 #navbar {
-    background-color: var(--customized-yellow);
+    background-color: var(--yellow);
     border-radius: 0.5rem;
     text-align: justify;
 }
@@ -64,9 +64,11 @@ header {
 .content-wrapper {
     text-align: justify;
     padding: 1.5rem;
+    font-size: 1.05rem;
 }
 
 blockquote {
+    display: block;
     background-color: var(--light-grey);
     border-radius: 0.5rem;
     padding: 1rem;
@@ -77,10 +79,40 @@ blockquote {
     padding: 0.5rem;
 }
 
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 425px) {
+    #navbar {
+        width: 95%;
+    }
+    .content-wrapper {
+        width: 95%;
+    }
 
+}
 
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+   
+    .container {
+        display: grid;
+        grid-template-columns: 90vw;
+    }
+    #navbar {
+        position: fixed;
+        top: 0;
+        max-height: 300px;
+        overflow-y: scroll;
+        width: 90%;
+        margin-left: 1rem;
+    }
+    .content-wrapper{
+        margin-left: 1rem;
+    }
 
-@media (min-height: 300px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
     nav ul {
         position: sticky;
         top: 0;
