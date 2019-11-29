@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af88b7a7-7a19-4b6c-911f-17b3292691af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FCC- Technical Documentation Page.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FCC- Technical Documentation Page.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -89,7 +87,7 @@
       <workItem from="1574765578155" duration="9055000" />
       <workItem from="1574934880751" duration="11769000" />
       <workItem from="1574948147236" duration="645000" />
-      <workItem from="1575015469273" duration="5277000" />
+      <workItem from="1575015469273" duration="9275000" />
     </task>
     <task id="LOCAL-00001" summary="creating project">
       <created>1574413996858</created>
@@ -119,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574947914173</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="full layout_media square">
+      <created>1575020948025</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575020948025</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +148,8 @@
     <MESSAGE value="html full layout" />
     <MESSAGE value="css primary layout" />
     <MESSAGE value="full layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="full layout" />
+    <MESSAGE value="full layout_media square" />
+    <option name="LAST_COMMIT_MESSAGE" value="full layout_media square" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="69" key="#Menus_and_Toolbars" timestamp="1574761499622">
@@ -158,10 +164,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="245" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1536.824@0.0.1536.824" timestamp="1574762799477" />
-    <state x="733" y="6" key="CommitChangelistDialog2" timestamp="1574947912506">
+    <state x="733" y="6" key="CommitChangelistDialog2" timestamp="1575020946523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="733" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1574947912506" />
+    <state x="733" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575020946523" />
     <state x="388" y="185" key="EditFileWatcherDialog" timestamp="1574766878388">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
